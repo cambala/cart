@@ -6,22 +6,20 @@ import org.cambala.fields.BaseField;
 import org.cambala.values.TextValue;
 
 
-@Field(type = "TEXT")
 @NoArgsConstructor
+@Field(type = "TEXT")
 public final class TextField extends BaseField<String> {
 
     public TextField(String name, String value) {
-        super(name, null);
-        this.value = new TextValue(value.strip());
+        super(name, new TextValue(value.strip()));
     }
 
-    public TextField(String name, TextValue value) {
-        super(name, null);
+    public TextField(String value) {
+        super(null, new TextValue(value.strip()));
+    }
+
+    public void setValue(TextValue value) {
         this.value = value;
-    }
-
-    public String name() {
-        return this.name;
     }
 
     public String getValue() {
@@ -30,7 +28,7 @@ public final class TextField extends BaseField<String> {
 
     @Override
     public String description() {
-        return String.format("%s: %s", getName(), getValue());
+        return String.format("%s: %s", name, getValue());
     }
 
     @Override

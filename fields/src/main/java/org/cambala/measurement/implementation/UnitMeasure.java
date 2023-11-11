@@ -9,7 +9,7 @@ import org.cambala.measurement.Measure;
 @AllArgsConstructor
 public enum UnitMeasure implements Measure {
 
-    @JsonProperty("MILLIMETER") UNIT("шт");
+    @JsonProperty("UNIT") UNIT("шт");
 
     private final String shortName;
 }

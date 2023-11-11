@@ -15,6 +15,6 @@ public class TextValue implements Value<String> {
 
     @Override
     public String getValue() {
-        return null;
+        return value;
     }
 }

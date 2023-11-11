@@ -1,11 +1,20 @@
 package org.cambala.values;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class NumericValue implements Value<Double> {
 
     Double value;
+
+    public void setValue(Double value) {
+        this.value = value;
+    }
+
+    @Override
+    public Double getValue() {
+        return value;
+    }
 }

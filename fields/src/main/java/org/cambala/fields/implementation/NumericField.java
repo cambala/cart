@@ -16,8 +16,7 @@ public final class NumericField extends BaseField<Double> {
     private static final DecimalFormat FORMATTER = NumericFieldValueFormatter.FORMATTER_3;
 
     public NumericField(String name, String value, Measure measure) {
-        super(name, measure);
-        this.value = new NumericValue(Double.valueOf(value));
+        super(name, new NumericValue(Double.valueOf(value)), measure);
     }
 
     public NumericField(String value) {
@@ -31,7 +30,7 @@ public final class NumericField extends BaseField<Double> {
 
     @Override
     public String description() {
-        return String.format("%s: %s %s", getName(), FORMATTER.format(getValue()), getMeasure().getShortName());
+        return String.format("%s: %s %s", name, FORMATTER.format(getValue()), measure.getShortName());
     }
 
     @Override

@@ -10,16 +10,16 @@ public class TitleField extends AbstractTemplate {
 
     private TextField title;
 
+    public TitleField(TextField title) {
+        this.title = title;
+    }
+
     public TitleField(String title) {
         this.title = new TextField(this.getTemplateName(), title);
     }
 
-    public String getTitle() {
-        return this.title.getValue();
-    }
-
-    public void setTitle(String title) {
-        this.title = new TextField(this.getTemplateName(), title);
+    public TextField getTitle() {
+        return title;
     }
 
     @Override

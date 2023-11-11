@@ -1,9 +1,9 @@
 package org.cambala.cart.controllers.item;
 
 import lombok.RequiredArgsConstructor;
-import org.cambala.cart.converters.item.ItemConverter;
+import org.cambala.cart.conversion.item.ItemConverter;
 import org.cambala.cart.dto.item.ItemRequest;
-import org.cambala.cart.models.catalog.Item;
+import org.cambala.cart.models.item.Item;
 import org.cambala.cart.repositories.ItemRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

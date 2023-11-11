@@ -20,7 +20,7 @@
         <!--  local  -->
         <dependency>
             <groupId>org.cambala</groupId>
-            <artifactId>cart-fields</artifactId>
+            <artifactId>cart-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- /local  -->

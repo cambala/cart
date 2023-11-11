@@ -12,6 +12,7 @@ public class ItemRequest {
 
     @JsonProperty("id")
     UUID id;
+
     @JsonProperty("attributes")
     List<Map<String, String>> attributes = new ArrayList<>();
 }
