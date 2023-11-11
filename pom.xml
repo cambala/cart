@@ -9,8 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+        <module>cart</module>
         <module>fields</module>
         <module>cart-api</module>
+        <module>cart-dto</module>
     </modules>
 
     <properties>
